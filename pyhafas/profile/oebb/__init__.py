@@ -24,7 +24,7 @@ class OEBBProfile(BaseProfile):
             "name": "oebbPROD-ADHOC"
         },
         "ver": "1.45",
-        "lang": "de",
+        "lang": "en",
         "auth": {
             "type": "AID",
             "aid": "OWDL4fE4ixNiPBBm"
