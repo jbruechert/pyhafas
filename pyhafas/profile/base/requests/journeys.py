@@ -144,7 +144,7 @@ class BaseJourneysRequest(JourneysRequestInterface):
             date = self.parse_date(jny['date'])
             journeys.append(
                 Journey(
-                    jny['ctxRecon'], date=date, duration=self.parse_timedelta(
+                    jny.get('ctx') or jny.get('ctxRecon'), date=date, duration=self.parse_timedelta(
                         jny['dur']), legs=self.parse_legs(
                         jny, data.common, date)))
         return journeys
